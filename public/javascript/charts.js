@@ -85,14 +85,15 @@ var caps =[];
           ],
           borderWidth: 1
       }]
-    },
+    }
+    /* ,
       options: {
           scales: {
               yAxes: [{
                   stacked: true
               }]
           }
-      }
+      } */
   });
   var LowCanvas = new Chart(lowchrt,{
       type: 'line',
