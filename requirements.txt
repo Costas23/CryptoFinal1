@@ -1,2 +1,2 @@
 kaggle
-Naked.toolshed.shell
+Naked
