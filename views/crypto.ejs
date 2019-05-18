@@ -146,6 +146,14 @@ $(".crypto").click(function(){
 });
 
 $(".month").click(function(){
+    if ($(this).text()=='Every Month'){
+      $.post("/everymonthdates",{year:$(this).attr('name')},function(data){
+        if(data==='done')
+        {
+            window.location.href="/everymonthdates";
+        }
+      });
+    }else{
     var month=$(this).text();
     var year = $(this).attr('name');
     console.log(year+"/"+month);
@@ -157,6 +165,7 @@ $(".month").click(function(){
             window.location.href="/dates";
         }
     });
+    }
 });
 </script>
 </body>

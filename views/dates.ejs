@@ -73,8 +73,17 @@ li.year{
 }.dropbtn{
   display:inline;
 }
+/* div.tablediv{
+
+  display: block;
+  overflow: auto;
+  height: 500px;
+  text-align: center;
+  
+} */
 table.data{
-    width:80%;
+  text-align: center; 
+  width:80%;
   border : 2px solid;
 }div.charts{
     padding-bottom:150px;
@@ -272,8 +281,8 @@ table.data{
                       <h4 align='center' class='aggbox text-center'>Average for <%=column%> is: <%=max.toFixed(2)%></h4>
                           
                         <%}%>
-    <div>
-            <table align='center' class="table table-bordered data">
+    <div align='center'  class='tablediv'>
+            <table class="table table-bordered data">
             <thead class="thead-dark">
               <tr>
                 <th class='header' >Date</th>
@@ -310,10 +319,11 @@ table.data{
           
               <%});%>
             </tbody>
-          </div>
+          
     
 
     </table>
+  </div>
 
 
 
